@@ -1,15 +1,1 @@
-{
-  "name": "My Development Container",
-  "image": "mariadb:latest",
-  "features": {
-    "docker": "latest"
-  },
-  "runArgs": [
-    "--env", "MYSQL_ROOT_PASSWORD=password"
-  ],
-  "settings": {
-    "mysql.host": "localhost",
-    "mysql.port": 3306
-  },
-  "postCreateCommand": "echo 'MariaDB container initialized!'"
-}
+
