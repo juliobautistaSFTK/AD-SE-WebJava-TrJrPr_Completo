@@ -1,1 +1,34 @@
 
+{
+  "name": "Java 8, Tomcat, Maven, and MariaDB",
+  "dockerFile": "Dockerfile",  // Usa el Dockerfile para personalizar la configuración
+  "context": ".",
+  "features": {
+    "docker": "latest",
+    "maven": "3.3"
+  },
+  "settings": {
+    "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+    "maven.executable": "/usr/share/maven/bin/mvn"
+  },
+  "postCreateCommand": "echo 'Development container initialized!'",
+  "runArgs": [
+    "--env", "MYSQL_ROOT_PASSWORD=my-secret-pw"
+  ],
+  "mounts": [
+    "source=maven-targets,target=/workspace/target,type=volume"
+  ],
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "java-maven-tomcat",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-spring-initializr"
+      ]
+    }
+  }
+}
