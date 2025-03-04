@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-	private static final String URL = "jdbc:mariadb://127.0.0.1:3306/taskmanager";
+	private static final String URL = "jdbc:mariadb://mariadb_1:3306/taskmanager";
 	private static final String USER = "root";
 	private static final String PASSWORD = "12345678";
 
