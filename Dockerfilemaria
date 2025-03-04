@@ -3,10 +3,10 @@ FROM mariadb:11.7
 
 # Establecemos las variables de entorno necesarias para la base de datos
 # Cambiar la contraseña predeterminada, puedes modificarla según sea necesario
-ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_ROOT_PASSWORD=12345678
 ENV MYSQL_DATABASE=my_database
-ENV MYSQL_USER=my_user
-ENV MYSQL_PASSWORD=my_password
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=12345678
 
 # Exponemos el puerto predeterminado de MariaDB
 EXPOSE 3306
