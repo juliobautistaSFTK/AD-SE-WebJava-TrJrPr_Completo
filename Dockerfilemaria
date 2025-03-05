@@ -8,8 +8,6 @@ ENV MYSQL_DATABASE=taskmanager
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=12345678
 
-RUN apt-get update && apt-get install -y mysql-client
-
 # Exponemos el puerto predeterminado de MariaDB
 EXPOSE 3306
 
