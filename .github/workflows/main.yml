@@ -18,12 +18,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Paso 2: Configurar Java 8
+      # Paso 2: Configurar Java 8 usando Adoptium
       - name: Set up JDK 8
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3  # Usamos la versión más reciente de la acción
         with:
           java-version: '8'  # Aquí configuramos Java 8
-          distribution: 'adoptopenjdk'
+          distribution: 'adoptium'  # Cambié de 'adoptopenjdk' a 'adoptium'
 
       # Paso 3: Compilar el proyecto con Maven
       - name: Build with Maven
