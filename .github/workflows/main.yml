@@ -33,10 +33,4 @@ jobs:
       - name: Run tests
         run: mvn test
 
-      # Paso 5: Guardar los resultados de la construcción o pruebas
-      # Actualiza a la versión más reciente de la acción
-      - name: Upload build results
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-results
-          path: target/
+
