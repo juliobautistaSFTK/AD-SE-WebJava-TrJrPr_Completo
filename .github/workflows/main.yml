@@ -19,6 +19,14 @@ jobs:
 
       run: mvn clean install -DskipTests
 
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Build Docker image
+      run: docker build -t my-app .
+
+    - name: Run Docker container
+      run: docker run -d --name my-container my-app
 
 
    
