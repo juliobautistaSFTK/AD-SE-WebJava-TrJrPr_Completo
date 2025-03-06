@@ -48,7 +48,7 @@ jobs:
           sleep 5
     - name: Test
       run: |
-          run: mvn Test
+          run: mvn test
 
 
    
