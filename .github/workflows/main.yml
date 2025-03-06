@@ -42,6 +42,9 @@ jobs:
       run: |
           docker cp CreateSQLtask.sql mariadb_1:/tmp/CreateSQLtask.sql
           sleep 30
-
+    - name: Crear sql
+      run: |
+          docker exec -i mariadb_1 mysql -u root -p12345678 taskmanager < CreateSQLtask.sql
+          sleep 5
 
    
