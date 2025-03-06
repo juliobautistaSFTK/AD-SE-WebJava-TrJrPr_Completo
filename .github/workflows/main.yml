@@ -36,6 +36,12 @@ jobs:
 
     - name: Run a command inside the MariaDB container
       run: |
-          docker exec mariadb_1 bash -c "echo 'SELECT 1;' | mysql -u root -p12345678"
+          docker exec mariadb_1 bash -c "apt-get update && apt-get install -y mysql-client"
+          sleep 30
+    - name: Crear sql
+      run: |
+          docker cp CreateSQLtask.sql mariadb_1:/tmp/CreateSQLtask.sql
+          sleep 30
+
 
    
