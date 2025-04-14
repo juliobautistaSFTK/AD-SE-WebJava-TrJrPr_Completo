@@ -1,5 +1,5 @@
 # **Instrucciones para el instructor**
-[Ver](Instrucciones/Readme_instructor.md)
+[Ver]([Instrucciones/Readme_instructor.md](https://github.com/juliobautistaSFTK/AD-SE-WebJava-TrJrPr_Completo/blob/main/Instrucciones/Readme_action_codespaces.md))
 
 
 # **Instrucciones para el participante**
